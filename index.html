@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquirreList - Harvest your tasks | Modern Todo App 2025</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="SquirreList - The modern todo app that helps you organize tasks efficiently. Harvest your tasks with our intuitive and powerful task management solution.">
+    <meta name="keywords" content="todo app, task management, productivity, organization, 2025, mobile app">
+    <meta name="author" content="SquirreList">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="SquirreList - Harvest your tasks">
+    <meta property="og:description" content="The modern todo app that helps you organize tasks efficiently.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://squirrelist.app">
+    <meta property="og:image" content="https://squirrelist.app/images/og-image.jpg">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-squirrel logo-icon"></i>
+                    <span class="logo-text">SquirreList</span>
+                </div>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <!-- <li><a href="#demo">Demo</a></li> -->
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <!-- <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#pricing">Pricing</a></li> -->
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+                <div class="header-cta">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#download" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#hero-gradient)"></path>
+                <defs>
+                    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FF7F50" stop-opacity="0.2"></stop>
+                        <stop offset="100%" stop-color="#FFD700" stop-opacity="0.2"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in">
+                        <span>Harvest Your Tasks,</span>
+                        Organize Your Life
+                    </h1>
+                    <p class="fade-in delay-1">SquirreList helps you collect and organize your tasks efficiently, just
+                        like a squirrel preparing for winter. Stay productive and never forget important tasks with our
+                        intuitive app.</p>
+                    <div class="cta-buttons fade-in delay-2">
+                        <a href="#download" class="primary-btn">
+                            <i class="fas fa-download"></i>
+                            Get Started
+                        </a>
+                        
+                    </div>
+                    <!-- <div class="hero-stats fade-in delay-3">
+                        <div class="stat-item">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">App Store Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">User Satisfaction</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="hero-image fade-in delay-2">
+                    <img src="logo.jpg" alt="SquirreList App" class="phone-mockup" />
+                    <div class="acorn-1"></div>
+                    <div class="acorn-2"></div>
+                    <div class="acorn-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Why Choose SquirreList?</h2>
+                <p>Our app combines simplicity with powerful features to help you manage tasks effortlessly.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Add tasks in seconds with our intuitive interface and quick-add gestures. No more friction
+                        between you and your productivity.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3>AI Task Sorting</h3>
+                    <p>Our AI learns your habits and automatically categorizes tasks by priority, ensuring you focus on
+                        what matters most.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Smart Reminders</h3>
+                    <p>Context-aware notifications remind you at the right time and place, so you never miss an
+                        important task again.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-palette feature-icon"></i>
+                    <h3>Customizable Themes</h3>
+                    <p>Make the app truly yours with personalized themes, fonts, and layouts that match your style and
+                        preferences.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-cloud feature-icon"></i>
+                    <h3>Seamless Sync</h3>
+                    <p>Keep your tasks in sync across all your devices automatically, so you're always up to date no
+                        matter where you are.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Productivity Insights</h3>
+                    <p>Gain valuable insights into your productivity patterns and task completion rates to continually
+                        improve your workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>How SquirreList Works</h2>
+                <p>Getting started is easy - just follow these simple steps.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-line"></div>
+                <div class="step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-image">
+                        <img src="download-app.jpg" alt="Download the app" />
+                    </div>
+                    <div class="step-content">
+                        <h3>Download SquirreList</h3>
+                        <p>Get SquirreList from the App Store or Google Play and install it on your device. It's
+                            completely free to start!</p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">2</div>
+                    <div class="step-image">
+                        <img src="create-task.jpg" alt="Create tasks" />
+                    </div>
+                    <div class="step-content">
+                        <h3>Create Your First Task</h3>
+                        <p>Add tasks quickly with our intuitive interface. Just tap, type, and save - it's that simple!
+                        </p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">3</div>
+                    <div class="step-image">
+                        <img src="organize-tasks.jpg" alt="Organize tasks" />
+                    </div>
+                    <div class="step-content">
+                        <h3>Organize & Prioritize</h3>
+                        <p>Group tasks into projects, set priorities, and add due dates to keep everything organized
+                            efficiently.</p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">4</div>
+                    <div class="step-image">
+                        <img src="stay-productive.jpg" alt="Stay productive" />
+                    </div>
+                    <div class="step-content">
+                        <h3>Stay On Track</h3>
+                        <p>Get timely reminders, track your progress, and celebrate completing tasks to maintain your
+                            productivity momentum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+          <div class="section-title reveal">
+            <h2>My Development Journey</h2>
+            <p>This is how SquirreList came to life — from an idea to a real product built with Flutter.</p>
+          </div>
+      
+          <div class="roadmap-container">
+            <div class="timeline">
+      
+              <!-- Step 1: Ý tưởng & Thiết kế -->
+              <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Early April 2025</span>
+                  <h3>Idea & Design</h3>
+                  <p>I came up with the idea for SquirreList and started designing its user experience and interface.</p>
+                  <ul class="timeline-features">
+                    <li class="timeline-feature">App concept</li>
+                    <li class="timeline-feature">Wireframes & UI/UX</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <!-- Step 2: Phát triển với Flutter -->
+              <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Mid-April → Mid-May 2025</span>
+                  <h3>Flutter Development</h3>
+                  <p>I developed SquirreList using Flutter — implementing all core features like task creation, smart reminders, and UI animations.</p>
+                  <ul class="timeline-features">
+                    <li class="timeline-feature">Flutter + Dart</li>
+                    <li class="timeline-feature">Local & Cloud Sync</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <!-- Step 3: Release -->
+              <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Late May 2025</span>
+                  <h3>Release to Store</h3>
+                  <p>SquirreList officially launched on app stores — ready for users to boost productivity and organize their life better.</p>
+                  <ul class="timeline-features">
+                    <li class="timeline-feature">App Store & Google Play</li>
+                    <li class="timeline-feature">Version 1.0.0</li>
+                    <li class="timeline-feature">Live Release</li>
+                  </ul>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+    </section>
+      
+
+    <!-- <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers to help you get started with SquirreList.</p>
+            </div>
+    
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How much does SquirreList cost?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SquirreList is free to start. We offer premium features through an optional subscription.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use SquirreList offline?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can add and manage tasks offline. Everything syncs once you're back online.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is my data secure?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We take data privacy seriously. Your tasks are encrypted and stored securely in the cloud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+        
+
+    <!-- Interactive Demo Section -->
+    <!-- <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Try It Yourself</h2>
+                <p>Experience SquirreList with our interactive demo below.</p>
+            </div>
+            <div class="demo-container reveal">
+                <div class="task-app">
+                    <div class="task-header">
+                        <h3 class="task-title">SquirreList Demo</h3>
+                    </div>
+                    <div class="task-body">
+                        <form class="task-form" id="taskForm">
+                            <input type="text" class="task-input" id="taskInput" placeholder="Add a new task..."
+                                autocomplete="off">
+                            <button type="submit" class="task-add-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </form>
+                        <ul class="task-list" id="taskList">
+                            <li class="task-item">
+                                <input type="checkbox" class="task-checkbox">
+                                <span class="task-text">Plan weekly grocery shopping</span>
+                                <button class="task-delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" class="task-checkbox">
+                                <span class="task-text">Schedule dentist appointment</span>
+                                <button class="task-delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" class="task-checkbox" checked>
+                                <span class="task-text">Submit quarterly report</span>
+                                <button class="task-delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="task-filters">
+                            <button class="task-filter active" data-filter="all">All</button>
+                            <button class="task-filter" data-filter="active">Active</button>
+                            <button class="task-filter" data-filter="completed">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>What Our Users Say</h2>
+                <p>Don't just take our word for it - here's what the SquirreList community has to say.</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">"SquirreList completely transformed how I manage my daily tasks. The
+                        intuitive design and smart features make it feel like the app knows what I need before I do.
+                        I've tried dozens of productivity apps, but this is the only one that stuck!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="/api/placeholder/60/60" alt="Alex Chen" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Alex Chen</h4>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">"As someone with ADHD, staying organized has always been a challenge.
+                        SquirreList's visual approach and gentle reminders have been a game-changer for me. I'm now more
+                        productive than ever and no longer forgetting important tasks."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="/api/placeholder/60/60" alt="Maya Johnson" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Maya Johnson</h4>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">"I manage multiple projects across different teams, and SquirreList
+                        keeps everything organized beautifully. The collaboration features are seamless, and the
+                        analytics help me identify where we can improve our workflow. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="/api/placeholder/60/60" alt="Carlos Rodriguez" />
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Rodriguez</h4>
+                            <p>Team Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Pricing Section -->
+    <!-- <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that works best for you and your needs.</p>
+            </div>
+            <div class="pricing-toggle reveal">
+                <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+                <div class="toggle-switch" id="pricingToggle">
+                    <div class="toggle-slider"></div>
+                </div>
+                <span class="toggle-label" id="yearlyLabel">Yearly (20% off)</span>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card reveal">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Free</h3>
+                        <div class="pricing-price">$0</div>
+                        <div class="pricing-duration">Forever</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited basic tasks</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Basic reminders</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>3 projects</span>
+                        </div>
+                        <div class="pricing-feature disabled">
+                            <i class="fas fa-times"></i>
+                            <span>AI task sorting</span>
+                        </div>
+                        <div class="pricing-feature disabled">
+                            <i class="fas fa-times"></i>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="pricing-feature disabled">
+                            <i class="fas fa-times"></i>
+                            <span>Collaboration features</span>
+                        </div>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#download" class="secondary-btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card popular reveal">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <div class="pricing-price" id="proPrice">$5.99</div>
+                        <div class="pricing-duration" id="proDuration">per month</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Everything in Free</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited projects</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Smart reminders</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>AI task sorting</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Basic analytics</span>
+                        </div>
+                        <div class="pricing-feature disabled">
+                            <i class="fas fa-times"></i>
+                            <span>Team collaboration</span>
+                        </div>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#download" class="primary-btn">Get Pro</a>
+                    </div>
+                </div>
+                <div class="pricing-card reveal">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Team</h3>
+                        <div class="pricing-price" id="teamPrice">$12.99</div>
+                        <div class="pricing-duration" id="teamDuration">per month</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Everything in Pro</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Team collaboration</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Project templates</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Admin controls</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Priority support</span>
+                        </div>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#download" class="secondary-btn">Get Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="download-bg">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="#FFFFFF" fill-opacity="0.1"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="download-content reveal">
+                <h2>Start Harvesting Your Tasks Today</h2>
+                <p>Download SquirreList now and take control of your productivity with our powerful, yet simple task
+                    management app.</p>
+                <div class="store-buttons">
+                    <a href="#" class="store-btn">
+                        <i class="fab fa-apple"></i>
+                        <div class="store-btn-content">
+                            <span class="store-btn-label">Download on the</span>
+                            <span class="store-btn-name">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div class="store-btn-content">
+                            <span class="store-btn-label">Get it on</span>
+                            <span class="store-btn-name">Google Play</span>
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="store-btn">
+                        <i class="fas fa-desktop"></i>
+                        <div class="store-btn-content">
+                            <span class="store-btn-label">Available for</span>
+                            <span class="store-btn-name">Desktop</span>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+        <div class="section-title reveal">
+            <h2>Frequently Asked Questions</h2>
+            <p>Got questions? We've got answers to help you get started with SquirreList.</p>
+        </div>
+    
+        <div class="faq-container">
+    
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                <span>Can I try SquirreList Pro before purchasing?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! We offer a 14-day free trial of SquirreList Pro so you can experience all the premium features before
+                making a decision. No credit card is required to start your trial, and you can downgrade to the free plan
+                anytime if you decide Pro isn't right for you.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                <span>How do I cancel my subscription?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>You can cancel your subscription anytime from your account settings. If you cancel, you'll continue to have
+                access to Pro features until the end of your current billing period. After that, your account will
+                automatically switch to the Free plan without losing any of your tasks.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                <span>Is there a limit to how many tasks I can create?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>No, there's no limit to the number of tasks you can create in any of our plans. Even on the Free plan, you
+                can create as many basic tasks as you need. The plan limitations are related to features like projects,
+                collaborators, and advanced functions, not the quantity of tasks.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                Is SquirreList really free to use?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! You can use all core features for free. We also offer optional premium features for power users.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                Can I use it offline?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Absolutely. Tasks added offline will automatically sync when you're back online.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                Does it support syncing across devices?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, your data is synced seamlessly across all your logged-in devices.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 7 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                How do I back up my data?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Backups are automatic through cloud sync. You don’t need to do anything manually.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 8 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                Can I customize the look of the app?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! SquirreList lets you choose themes, layout preferences, and dark/light modes.</p>
+            </div>
+            </div>
+    
+            <!-- FAQ 9 -->
+            <div class="faq-item">
+            <div class="faq-question">
+                What platforms does SquirreList support?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Currently available for iOS and Android. A web version is in our roadmap.</p>
+            </div>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-squirrel logo-icon"></i>
+                        <span class="footer-logo-text">SquirreList</span>
+                    </div>
+                    <p class="footer-description">SquirreList helps you collect and organize your tasks efficiently,
+                        just like a squirrel preparing for winter. Our modern task management app keeps you productive
+                        and organized.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                        <li><a href="#roadmap"><i class="fas fa-chevron-right"></i> Roadmap</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Changelog</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Integrations</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Community</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, news, and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 SquirreList. All rights reserved. Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+<!-- </html>
+</div>
+<div class="faq-item reveal">
+    <div class="faq-question">
+        <span>Can I try SquirreList Pro before purchasing?</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+        <p>Yes! We offer a 14-day free trial of SquirreList Pro so you can experience all the premium features before
+            making a decision. No credit card is required to start your trial, and you can downgrade to the free plan
+            anytime if you decide Pro isn't right for you.</p>
+    </div>
+</div>
+<div class="faq-item reveal">
+    <div class="faq-question">
+        <span>How do I cancel my subscription?</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+        <p>You can cancel your subscription anytime from your account settings. If you cancel, you'll continue to have
+            access to Pro features until the end of your current billing period. After that, your account will
+            automatically switch to the Free plan without losing any of your tasks.</p>
+    </div>
+</div>
+<div class="faq-item reveal">
+    <div class="faq-question">
+        <span>Is there a limit to how many tasks I can create?</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+        <p>No, there's no limit to the number of tasks you can create in any of our plans. Even on the Free plan, you
+            can create as many basic tasks as you need. The plan limitations are related to features like projects,
+            collaborators, and advanced functions, not the quantity of tasks.</p>
+    </div>
+</div>
+</div>
+</div>
+</section> -->
