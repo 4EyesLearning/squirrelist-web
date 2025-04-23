@@ -1404,13 +1404,18 @@ h1 span {
     border-radius: var(--radius-sm);
     padding: 12px 24px;
     text-decoration: none;
-    transition: var(--transition);
 }
 
 .store-btn.alt {
     background-color: var(--light);
     color: var(--primary);
     border: 2px solid var(--primary); /* nếu bạn muốn nhìn rõ đường viền */
+}
+
+.store-btn.download {
+    background-color: #000000;
+    color: white;
+    border: none;
 }
 
 .store-btn:hover {
