@@ -58,12 +58,12 @@ header {
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    background-color: rgba(249, 246, 240, 0.8);
+    background-color: #C5F9FC;
     transition: var(--transition);
 }
 
 [data-theme="dark"] header {
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: #03292B;
 }
 
 .header-content {
