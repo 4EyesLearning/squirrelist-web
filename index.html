@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,8 +38,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-squirrel logo-icon"></i>
-                    <span class="logo-text">SquirreList</span>
+                    <img src="SquirreList.svg" alt="SquirreList Logo" class="logo-img" />
                 </div>
                 <nav>
                     <ul id="navMenu">
@@ -53,13 +55,14 @@
                     </button>
                 </nav>
                 <div class="header-cta">
-                    <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <a href="#download" class="download-btn">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="material-icons-outlined" id="themeIcon">dark_mode</span>
+                      </button>
+                      
+                    <!-- <a href="#download" class="download-btn">
                         <i class="fas fa-download"></i>
                         Download
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -67,109 +70,186 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg">
-            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#hero-gradient)"></path>
-                <defs>
-                    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#FF7F50" stop-opacity="0.2"></stop>
-                        <stop offset="100%" stop-color="#FFD700" stop-opacity="0.2"></stop>
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
+       
         <div class="container">
             <div class="hero-content">
+                <!-- Left content: text and CTA -->
                 <div class="hero-text">
-                    <h1 class="fade-in">
-                        <span>Harvest Your Tasks,</span>
-                        Organize Your Life
+                    <h1 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 60px; color: #00C4CC;">
+                        Harvest Your Tasks
                     </h1>
-                    <p class="fade-in delay-1">SquirreList helps you collect and organize your tasks efficiently, just
-                        like a squirrel preparing for winter. Stay productive and never forget important tasks with our
-                        intuitive app.</p>
+                    <p class="fade-in delay-1" style="font-family: 'Inter', sans-serif; font-size: 18px;">
+                        Join Amrita the squirrel on a playful journey to manage your tasks! SquirreList turns every to-do into an acorn to harvest, keeping you motivated with streaks and reminders. Experience a fun, simple, and effective way to stay on track every day. Download now and start harvesting!
+                    </p>
                     <div class="cta-buttons fade-in delay-2">
-                        <a href="#download" class="primary-btn">
-                            <i class="fas fa-download"></i>
-                            Get Started
+                        <a href="#" class="store-btn">
+                            <i class="fab fa-apple"></i>
+                            <div class="store-btn-content">
+                                <span class="store-btn-label">Download on the</span>
+                                <span class="store-btn-name">App Store</span>
+                            </div>
                         </a>
-                        
+                        <a href="#" class="store-btn alt">
+                            <i class="fab fa-google-play"></i>
+                            <div class="store-btn-content">
+                                <span class="store-btn-label">Get it on</span>
+                                <span class="store-btn-name">Google Play</span>
+                            </div>
+                        </a>
                     </div>
-                    <!-- <div class="hero-stats fade-in delay-3">
-                        <div class="stat-item">
-                            <span class="stat-number">500K+</span>
-                            <span class="stat-label">Downloads</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">4.9</span>
-                            <span class="stat-label">App Store Rating</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">User Satisfaction</span>
-                        </div>
-                    </div> -->
+                    <div class="acorn-round"></div>
                 </div>
-                <div class="hero-image fade-in delay-2">
-                    <img src="logo.jpg" alt="SquirreList App" class="phone-mockup" />
-                    <div class="acorn-1"></div>
-                    <div class="acorn-2"></div>
-                    <div class="acorn-3"></div>
+                
+    
+                <!-- Right content: phone image -->
+                <div class="hero-image">
+                    <img src="landing_image.png" alt="App preview" class="phone-mockup" />
+                    <div class="floating-soi">
+                        <img src="ic_soi.svg" alt="Floating squirrel" class="soi-image">
+                    </div>
+                    <div class="acorn-bg acorn-1"></div>
+                    <div class="acorn-bg acorn-2"></div>
+                    <div class="acorn-bg acorn-3"></div>
                 </div>
             </div>
+        </div>
+
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 36px;">Why SquirreList?</h2>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-us-card reveal" style="background-color: rgba(0, 196, 204, 0.1);">
+                    <div class="why-us-icon" style="color: #00C4CC;">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Fun & Motivating</h3>
+                    <p>Amrita cheers you on as you harvest each task!</p>
+                </div>
+                <div class="why-us-card reveal" style="background-color: rgba(255, 111, 97, 0.1);">
+                    <div class="why-us-icon" style="color: #FF6F61;">
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                    <h3>Simple & Effective</h3>
+                    <p>Manage tasks easily with a clean, intuitive interface.</p>
+                </div>
+                <div class="why-us-card reveal" style="background-color: rgba(232, 236, 239, 0.1);">
+                    <div class="why-us-icon" style="color: #E8ECEF;">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Stay on Track</h3>
+                    <p>Reminders and streaks keep you motivated every day.</p>
+                </div>
+            </div>
+            <div class="floating-soi">
+                <img src="ic_soi.svg" alt="Floating squirrel" class="soi-image">
+            </div>
+            <div class="why-us-acorn acorn-1"></div>
+            <div class="why-us-acorn acorn-2"></div>
+            <div class="why-us-acorn acorn-3"></div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <div class="section-title reveal">
-                <h2>Why Choose SquirreList?</h2>
-                <p>Our app combines simplicity with powerful features to help you manage tasks effortlessly.</p>
+            <div class="features-container">
+                <div class="hero-image">
+                    <img src="landing_image.png" alt="App preview" class="phone-mockup" />
+                    <div class="floating-soi">
+                        <img src="ic_soi.svg" alt="Floating squirrel" class="soi-image">
+                    </div>
+                    <div class="acorn-bg acorn-1"></div>
+                    <div class="acorn-bg acorn-2"></div>
+                    <div class="acorn-bg acorn-3"></div>
+                </div>
+                <div class="features-content">
+                    <div class="section-title reveal">
+                        <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 36px;">Our Features</h2>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-list-check"></i>
+                            </div>
+                            <h3>Task List</h3>
+                            <p>Organize your tasks with categories and smart reminders.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Streak System</h3>
+                            <p>Build streaks by completing tasks daily with Amrita.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-hands-clapping"></i>
+                            </div>
+                            <h3>Playful Motivation</h3>
+                            <p>Celebrate every task done with Amrita's joyful cheers!</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3>Customizable</h3>
+                            <p>Add tags, stickers, and checklists to personalize tasks.</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card reveal">
-                    <i class="fas fa-bolt feature-icon"></i>
-                    <h3>Lightning Fast</h3>
-                    <p>Add tasks in seconds with our intuitive interface and quick-add gestures. No more friction
-                        between you and your productivity.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 36px;">Latest Insights</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card reveal">
+                    <div class="blog-thumbnail">
+                        <img src="stay-productive.jpg" alt="Stay Productive with SquirreList">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Stay Productive with SquirreList</h3>
+                        <p>Discover how SquirreList can transform your daily productivity and help you achieve more.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="feature-card reveal">
-                    <i class="fas fa-brain feature-icon"></i>
-                    <h3>AI Task Sorting</h3>
-                    <p>Our AI learns your habits and automatically categorizes tasks by priority, ensuring you focus on
-                        what matters most.</p>
+                <div class="blog-card reveal">
+                    <div class="blog-thumbnail">
+                        <img src="create-task.jpg" alt="Story of Amrita">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Story of Amrita</h3>
+                        <p>Learn about the journey of Amrita, our beloved squirrel mascot, and how she inspires productivity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="feature-card reveal">
-                    <i class="fas fa-bell feature-icon"></i>
-                    <h3>Smart Reminders</h3>
-                    <p>Context-aware notifications remind you at the right time and place, so you never miss an
-                        important task again.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <i class="fas fa-palette feature-icon"></i>
-                    <h3>Customizable Themes</h3>
-                    <p>Make the app truly yours with personalized themes, fonts, and layouts that match your style and
-                        preferences.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <i class="fas fa-cloud feature-icon"></i>
-                    <h3>Seamless Sync</h3>
-                    <p>Keep your tasks in sync across all your devices automatically, so you're always up to date no
-                        matter where you are.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <i class="fas fa-chart-line feature-icon"></i>
-                    <h3>Productivity Insights</h3>
-                    <p>Gain valuable insights into your productivity patterns and task completion rates to continually
-                        improve your workflow.</p>
+                <div class="blog-card reveal">
+                    <div class="blog-thumbnail">
+                        <img src="organize-tasks.jpg" alt="Top 5 Task Tips 2025">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Top 5 Task Tips 2025</h3>
+                        <p>Explore the latest task management strategies and tips for staying organized in 2025.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
+    <!-- <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-title reveal">
                 <h2>How SquirreList Works</h2>
@@ -223,7 +303,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="roadmap" id="roadmap">
         <div class="container">
@@ -562,7 +642,7 @@
     </section> -->
 
     <!-- Download Section -->
-    <section class="download" id="download">
+    <!-- <section class="download" id="download">
         <div class="download-bg">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none">
                 <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="#FFFFFF" fill-opacity="0.1"></path>
@@ -588,17 +668,10 @@
                             <span class="store-btn-name">Google Play</span>
                         </div>
                     </a>
-                    <!-- <a href="#" class="store-btn">
-                        <i class="fas fa-desktop"></i>
-                        <div class="store-btn-content">
-                            <span class="store-btn-label">Available for</span>
-                            <span class="store-btn-name">Desktop</span>
-                        </div>
-                    </a> -->
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FAQ Section -->
     <section class="faq" id="faq">
@@ -689,7 +762,7 @@
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-                <p>Backups are automatic through cloud sync. You don’t need to do anything manually.</p>
+                <p>Backups are automatic through cloud sync. You don't need to do anything manually.</p>
             </div>
             </div>
     
@@ -781,42 +854,3 @@
     <!-- Custom JavaScript -->
     <script src="app.js"></script>
 </body>
-
-<!-- </html>
-</div>
-<div class="faq-item reveal">
-    <div class="faq-question">
-        <span>Can I try SquirreList Pro before purchasing?</span>
-        <i class="fas fa-chevron-down"></i>
-    </div>
-    <div class="faq-answer">
-        <p>Yes! We offer a 14-day free trial of SquirreList Pro so you can experience all the premium features before
-            making a decision. No credit card is required to start your trial, and you can downgrade to the free plan
-            anytime if you decide Pro isn't right for you.</p>
-    </div>
-</div>
-<div class="faq-item reveal">
-    <div class="faq-question">
-        <span>How do I cancel my subscription?</span>
-        <i class="fas fa-chevron-down"></i>
-    </div>
-    <div class="faq-answer">
-        <p>You can cancel your subscription anytime from your account settings. If you cancel, you'll continue to have
-            access to Pro features until the end of your current billing period. After that, your account will
-            automatically switch to the Free plan without losing any of your tasks.</p>
-    </div>
-</div>
-<div class="faq-item reveal">
-    <div class="faq-question">
-        <span>Is there a limit to how many tasks I can create?</span>
-        <i class="fas fa-chevron-down"></i>
-    </div>
-    <div class="faq-answer">
-        <p>No, there's no limit to the number of tasks you can create in any of our plans. Even on the Free plan, you
-            can create as many basic tasks as you need. The plan limitations are related to features like projects,
-            collaborators, and advanced functions, not the quantity of tasks.</p>
-    </div>
-</div>
-</div>
-</div>
-</section> -->

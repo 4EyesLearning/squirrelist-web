@@ -32,25 +32,28 @@ if (mobileMenuToggle) {
 
 // Theme Toggle
 if (themeToggle) {
-    // Check for saved theme preference
+    // Load saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
-        htmlElement.setAttribute('data-theme', 'dark');
-        themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    htmlElement.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = 'light_mode'; // Hiện mặt trời
     }
 
+    // Toggle theme on click
     themeToggle.addEventListener('click', () => {
-        if (htmlElement.getAttribute('data-theme') === 'dark') {
+    const isDark = htmlElement.getAttribute('data-theme') === 'dark';
+        if (isDark) {
             htmlElement.removeAttribute('data-theme');
             localStorage.setItem('theme', 'light');
-            themeToggle.querySelector('i').classList.replace('fa-sun', 'fa-moon');
+            themeIcon.textContent = 'dark_mode'; // Hiện mặt trăng
         } else {
             htmlElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
-            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+            themeIcon.textContent = 'light_mode'; // Hiện mặt trời
         }
     });
 }
+
 
 // Pricing Toggle
 if (pricingToggle) {
