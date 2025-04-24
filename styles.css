@@ -1542,19 +1542,30 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Newsletter Form */
 .newsletter-form {
     display: flex;
     gap: 10px;
+    min-width: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
 }
 
 .newsletter-input {
     flex: 1;
+    min-width: 0;
+    width: 100%;
     padding: 12px 16px;
     border-radius: var(--radius-sm);
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--dark);
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
 }
 
 [data-theme="dark"] .newsletter-input {
@@ -1566,17 +1577,40 @@ footer {
 }
 
 .newsletter-btn {
+    flex-shrink: 0;
     background-color: var(--primary);
     color: var(--dark);
     border: none;
     border-radius: var(--radius-sm);
-    padding: 0 16px;
+    padding: 0;
     cursor: pointer;
     transition: var(--transition);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .newsletter-btn:hover {
     background-color: var(--accent);
+}
+
+@media (max-width: 480px) {
+    .newsletter-form {
+        gap: 8px;
+    }
+    
+    .newsletter-input {
+        padding: 12px 12px;
+        font-size: 13px;
+        height: 36px;
+    }
+    
+    .newsletter-btn {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .footer-bottom {
