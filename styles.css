@@ -421,8 +421,8 @@ h1 span {
 }
 
 .features .section-title {
-    text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .features-grid {
@@ -1746,8 +1746,38 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 40px 0 20px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .header-cta {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
     .mobile-menu-toggle {
         display: block;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .theme-toggle {
+        padding: 5px;
     }
 
     nav ul {
