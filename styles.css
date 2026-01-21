@@ -1458,6 +1458,25 @@ footer {
     margin-bottom: 60px;
 }
 
+.footer-content.footer-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-centered .footer-about {
+    max-width: 500px;
+}
+
+.footer-centered .footer-logo {
+    justify-content: center;
+}
+
+.footer-centered .social-links {
+    justify-content: center;
+}
 .footer-logo {
     display: flex;
     align-items: center;
