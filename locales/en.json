@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "whyUs": "Why Us",
+    "features": "Features",
+    "blog": "Blog",
+    "roadmap": "Roadmap",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Harvest Your Tasks",
+    "description": "Join Amrita the squirrel on a playful journey to manage your tasks! SquirreList turns every to-do into an acorn to harvest, keeping you motivated with streaks and reminders. Experience a fun, simple, and effective way to stay on track every day. Download now and start harvesting!",
+    "appStoreLabel": "Download on the",
+    "appStoreName": "App Store",
+    "googlePlayLabel": "Get it on",
+    "googlePlayName": "Google Play"
+  },
+  "whyUs": {
+    "title": "Why SquirreList?",
+    "card1Title": "Fun & Motivating",
+    "card1Desc": "Amrita cheers you on as you harvest each task!",
+    "card2Title": "Simple & Effective",
+    "card2Desc": "Manage tasks easily with a clean, intuitive interface.",
+    "card3Title": "Stay on Track",
+    "card3Desc": "Reminders and streaks keep you motivated every day."
+  },
+  "features": {
+    "title": "Our Features",
+    "taskListTitle": "Task List",
+    "taskListDesc": "Organize your tasks with categories and smart reminders.",
+    "streakTitle": "Streak System",
+    "streakDesc": "Build streaks by completing tasks daily with Amrita.",
+    "motivationTitle": "Playful Motivation",
+    "motivationDesc": "Celebrate every task done with Amrita's joyful cheers!",
+    "customTitle": "Customizable",
+    "customDesc": "Add tags, stickers, and checklists to personalize tasks."
+  },
+  "blog": {
+    "title": "Latest Insights",
+    "post1Title": "Stay Productive with SquirreList",
+    "post1Desc": "Discover how SquirreList can transform your daily productivity and help you achieve more.",
+    "post2Title": "Story of Amrita",
+    "post2Desc": "Learn about the journey of Amrita, our beloved squirrel mascot, and how she inspires productivity.",
+    "post3Title": "Top 5 Task Tips 2025",
+    "post3Desc": "Explore the latest task management strategies and tips for staying organized in 2025.",
+    "readMore": "Read More"
+  },
+  "roadmap": {
+    "title": "My Development Journey",
+    "subtitle": "This is how SquirreList came to life — from an idea to a real product built with Flutter.",
+    "step1Date": "Early April 2025",
+    "step1Title": "Idea & Design",
+    "step1Desc": "I came up with the idea for SquirreList and started designing its user experience and interface.",
+    "step1Feature1": "App concept",
+    "step1Feature2": "Wireframes & UI/UX",
+    "step2Date": "Mid-April → Mid-May 2025",
+    "step2Title": "Flutter Development",
+    "step2Desc": "I developed SquirreList using Flutter — implementing all core features like task creation, smart reminders, and UI animations.",
+    "step2Feature1": "Flutter + Dart",
+    "step2Feature2": "Local & Cloud Sync",
+    "step3Date": "Late May 2025",
+    "step3Title": "Release to Store",
+    "step3Desc": "SquirreList officially launched on app stores — ready for users to boost productivity and organize their life better.",
+    "step3Feature1": "App Store & Google Play",
+    "step3Feature2": "Version 1.0.0",
+    "step3Feature3": "Live Release"
+  },
+  "download": {
+    "title": "Start Harvesting Your Tasks Today",
+    "description": "Download SquirreList now and take control of your productivity with our powerful, yet simple task management app."
+  },
+  "footer": {
+    "description": "SquirreList helps you collect and organize your tasks efficiently, just like a squirrel preparing for winter. Our modern task management app keeps you productive and organized.",
+    "copyright": "© 2025 SquirreList. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

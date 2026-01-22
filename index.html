@@ -44,25 +44,24 @@
                 </div>
                 <nav>
                     <ul id="navMenu">
-                        <li><a href="#why-us">Why Us</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#roadmap">Roadmap</a></li>
-                        <li><a href="#download">Download</a></li>
+                        <li><a href="#why-us" data-i18n="nav.whyUs">Why Us</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a></li>
+                        <li><a href="#download" data-i18n="nav.download">Download</a></li>
                     </ul>
                     <button class="mobile-menu-toggle" id="mobileMenuToggle">
                         <i class="fas fa-bars"></i>
                     </button>
                 </nav>
                 <div class="header-cta">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="en" onclick="i18n.setLanguage('en')">EN</button>
+                        <button class="lang-btn" data-lang="vi" onclick="i18n.setLanguage('vi')">VI</button>
+                    </div>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <span class="material-icons-outlined" id="themeIcon">dark_mode</span>
-                      </button>
-                      
-                    <!-- <a href="#download" class="download-btn">
-                        <i class="fas fa-download"></i>
-                        Download
-                    </a> -->
+                    </button>
                 </div>
             </div>
         </div>
@@ -75,25 +74,26 @@
             <div class="hero-content">
                 <!-- Left content: text and CTA -->
                 <div class="hero-text">
-                    <h1 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 60px; color: #00C4CC;">
+                    <h1 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 60px; color: #00C4CC;"
+                        data-i18n="hero.title">
                         Harvest Your Tasks
                     </h1>
-                    <p class="fade-in delay-1" style="font-family: 'Nunito', sans-serif; font-size: 18px;">
+                    <p class="fade-in delay-1" style="font-family: 'Nunito', sans-serif; font-size: 18px;" data-i18n="hero.description">
                         Join Amrita the squirrel on a playful journey to manage your tasks! SquirreList turns every to-do into an acorn to harvest, keeping you motivated with streaks and reminders. Experience a fun, simple, and effective way to stay on track every day. Download now and start harvesting!
                     </p>
                     <div class="cta-buttons fade-in delay-2">
                         <a href="https://apps.apple.com/vn/app/squirrelist/id6747591920" class="store-btn">
                             <i class="fab fa-apple"></i>
                             <div class="store-btn-content">
-                                <span class="store-btn-label">Download on the</span>
-                                <span class="store-btn-name">App Store</span>
+                                <span class="store-btn-label" data-i18n="hero.appStoreLabel">Download on the</span>
+                                <span class="store-btn-name" data-i18n="hero.appStoreName">App Store</span>
                             </div>
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=vn.assifit" class="store-btn alt">
                             <i class="fab fa-google-play"></i>
                             <div class="store-btn-content">
-                                <span class="store-btn-label">Get it on</span>
-                                <span class="store-btn-name">Google Play</span>
+                                <span class="store-btn-label" data-i18n="hero.googlePlayLabel">Get it on</span>
+                                <span class="store-btn-name" data-i18n="hero.googlePlayName">Google Play</span>
                             </div>
                         </a>
                     </div>
@@ -120,29 +120,30 @@
     <section class="why-us" id="why-us">
         <div class="container">
             <div class="section-title reveal">
-                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;">Why SquirreList?</h2>
+                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;" data-i18n="whyUs.title">Why
+                    SquirreList?</h2>
             </div>
             <div class="why-us-grid">
                 <div class="why-us-card reveal" style="background-color: rgba(0, 196, 204, 0.1);">
                     <div class="why-us-icon" style="color: #00C4CC;">
                         <i class="fas fa-seedling"></i>
                     </div>
-                    <h3>Fun & Motivating</h3>
-                    <p>Amrita cheers you on as you harvest each task!</p>
+                    <h3 data-i18n="whyUs.card1Title">Fun & Motivating</h3>
+                    <p data-i18n="whyUs.card1Desc">Amrita cheers you on as you harvest each task!</p>
                 </div>
                 <div class="why-us-card reveal" style="background-color: rgba(255, 111, 97, 0.1);">
                     <div class="why-us-icon" style="color: #FF6F61;">
                         <i class="fas fa-check-square"></i>
                     </div>
-                    <h3>Simple & Effective</h3>
-                    <p>Manage tasks easily with a clean, intuitive interface.</p>
+                    <h3 data-i18n="whyUs.card2Title">Simple & Effective</h3>
+                    <p data-i18n="whyUs.card2Desc">Manage tasks easily with a clean, intuitive interface.</p>
                 </div>
                 <div class="why-us-card reveal" style="background-color: rgba(232, 236, 239, 0.1);">
                     <div class="why-us-icon" style="color: #E8ECEF;">
                         <i class="fas fa-road"></i>
                     </div>
-                    <h3>Stay on Track</h3>
-                    <p>Reminders and streaks keep you motivated every day.</p>
+                    <h3 data-i18n="whyUs.card3Title">Stay on Track</h3>
+                    <p data-i18n="whyUs.card3Desc">Reminders and streaks keep you motivated every day.</p>
                 </div>
             </div>
             <div class="floating-soi">
@@ -158,7 +159,8 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-title reveal">
-                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;">Our Features</h2>
+                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;" data-i18n="features.title">Our
+                    Features</h2>
             </div>
             <div class="features-container">
                 <div class="hero-image">
@@ -176,29 +178,29 @@
                             <div class="feature-icon">
                                 <i class="fas fa-list-check"></i>
                             </div>
-                            <h3>Task List</h3>
-                            <p>Organize your tasks with categories and smart reminders.</p>
+                            <h3 data-i18n="features.taskListTitle">Task List</h3>
+                            <p data-i18n="features.taskListDesc">Organize your tasks with categories and smart reminders.</p>
                         </div>
                         <div class="feature-card reveal">
                             <div class="feature-icon">
                                 <i class="fas fa-award"></i>
                             </div>
-                            <h3>Streak System</h3>
-                            <p>Build streaks by completing tasks daily with Amrita.</p>
+                            <h3 data-i18n="features.streakTitle">Streak System</h3>
+                            <p data-i18n="features.streakDesc">Build streaks by completing tasks daily with Amrita.</p>
                         </div>
                         <div class="feature-card reveal">
                             <div class="feature-icon">
                                 <i class="fas fa-hands-clapping"></i>
                             </div>
-                            <h3>Playful Motivation</h3>
-                            <p>Celebrate every task done with Amrita's joyful cheers!</p>
+                            <h3 data-i18n="features.motivationTitle">Playful Motivation</h3>
+                            <p data-i18n="features.motivationDesc">Celebrate every task done with Amrita's joyful cheers!</p>
                         </div>
                         <div class="feature-card reveal">
                             <div class="feature-icon">
                                 <i class="fas fa-tags"></i>
                             </div>
-                            <h3>Customizable</h3>
-                            <p>Add tags, stickers, and checklists to personalize tasks.</p>
+                            <h3 data-i18n="features.customTitle">Customizable</h3>
+                            <p data-i18n="features.customDesc">Add tags, stickers, and checklists to personalize tasks.</p>
                         </div>
                     </div>
                     
@@ -211,7 +213,8 @@
     <section class="blog" id="blog">
         <div class="container">
             <div class="section-title reveal">
-                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;">Latest Insights</h2>
+                <h2 style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 36px;" data-i18n="blog.title">Latest Insights
+                </h2>
             </div>
             <div class="blog-grid">
                 <div class="blog-card reveal">
@@ -219,9 +222,10 @@
                         <img src="stay-productive.jpg" alt="Stay Productive with SquirreList">
                     </div>
                     <div class="blog-content">
-                        <h3>Stay Productive with SquirreList</h3>
-                        <p>Discover how SquirreList can transform your daily productivity and help you achieve more.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="blog.post1Title">Stay Productive with SquirreList</h3>
+                        <p data-i18n="blog.post1Desc">Discover how SquirreList can transform your daily productivity and help you achieve more.
+                        </p>
+                        <a href="#" class="read-more"><span data-i18n="blog.readMore">Read More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="blog-card reveal">
@@ -229,9 +233,10 @@
                         <img src="create-task.jpg" alt="Story of Amrita">
                     </div>
                     <div class="blog-content">
-                        <h3>Story of Amrita</h3>
-                        <p>Learn about the journey of Amrita, our beloved squirrel mascot, and how she inspires productivity.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="blog.post2Title">Story of Amrita</h3>
+                        <p data-i18n="blog.post2Desc">Learn about the journey of Amrita, our beloved squirrel mascot, and how she inspires
+                            productivity.</p>
+                        <a href="#" class="read-more"><span data-i18n="blog.readMore">Read More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="blog-card reveal">
@@ -239,9 +244,9 @@
                         <img src="organize-tasks.jpg" alt="Top 5 Task Tips 2025">
                     </div>
                     <div class="blog-content">
-                        <h3>Top 5 Task Tips 2025</h3>
-                        <p>Explore the latest task management strategies and tips for staying organized in 2025.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="blog.post3Title">Top 5 Task Tips 2025</h3>
+                        <p data-i18n="blog.post3Desc">Explore the latest task management strategies and tips for staying organized in 2025.</p>
+                        <a href="#" class="read-more"><span data-i18n="blog.readMore">Read More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -308,8 +313,9 @@
     <section class="roadmap" id="roadmap">
         <div class="container">
           <div class="section-title reveal">
-            <h2>My Development Journey</h2>
-            <p>This is how SquirreList came to life — from an idea to a real product built with Flutter.</p>
+            <h2 data-i18n="roadmap.title">My Development Journey</h2>
+            <p data-i18n="roadmap.subtitle">This is how SquirreList came to life — from an idea to a real product built with
+                Flutter.</p>
           </div>
       
           <div class="roadmap-container">
@@ -319,12 +325,13 @@
               <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <span class="timeline-date">Early April 2025</span>
-                  <h3>Idea & Design</h3>
-                  <p>I came up with the idea for SquirreList and started designing its user experience and interface.</p>
+                <span class="timeline-date" data-i18n="roadmap.step1Date">Early April 2025</span>
+                <h3 data-i18n="roadmap.step1Title">Idea & Design</h3>
+                <p data-i18n="roadmap.step1Desc">I came up with the idea for SquirreList and started designing its user experience and
+                    interface.</p>
                   <ul class="timeline-features">
-                    <li class="timeline-feature">App concept</li>
-                    <li class="timeline-feature">Wireframes & UI/UX</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step1Feature1">App concept</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step1Feature2">Wireframes & UI/UX</li>
                   </ul>
                 </div>
               </div>
@@ -333,12 +340,13 @@
               <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <span class="timeline-date">Mid-April → Mid-May 2025</span>
-                  <h3>Flutter Development</h3>
-                  <p>I developed SquirreList using Flutter — implementing all core features like task creation, smart reminders, and UI animations.</p>
+                <span class="timeline-date" data-i18n="roadmap.step2Date">Mid-April → Mid-May 2025</span>
+                <h3 data-i18n="roadmap.step2Title">Flutter Development</h3>
+                <p data-i18n="roadmap.step2Desc">I developed SquirreList using Flutter — implementing all core features like task
+                    creation, smart reminders, and UI animations.</p>
                   <ul class="timeline-features">
-                    <li class="timeline-feature">Flutter + Dart</li>
-                    <li class="timeline-feature">Local & Cloud Sync</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step2Feature1">Flutter + Dart</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step2Feature2">Local & Cloud Sync</li>
                   </ul>
                 </div>
               </div>
@@ -347,13 +355,14 @@
               <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <span class="timeline-date">Late May 2025</span>
-                  <h3>Release to Store</h3>
-                  <p>SquirreList officially launched on app stores — ready for users to boost productivity and organize their life better.</p>
+                <span class="timeline-date" data-i18n="roadmap.step3Date">Late May 2025</span>
+                <h3 data-i18n="roadmap.step3Title">Release to Store</h3>
+                <p data-i18n="roadmap.step3Desc">SquirreList officially launched on app stores — ready for users to boost productivity
+                    and organize their life better.</p>
                   <ul class="timeline-features">
-                    <li class="timeline-feature">App Store & Google Play</li>
-                    <li class="timeline-feature">Version 1.0.0</li>
-                    <li class="timeline-feature">Live Release</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step3Feature1">App Store & Google Play</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step3Feature2">Version 1.0.0</li>
+                    <li class="timeline-feature" data-i18n="roadmap.step3Feature3">Live Release</li>
                   </ul>
                 </div>
               </div>
@@ -650,22 +659,23 @@
         </div>
         <div class="container">
             <div class="download-content reveal">
-                <h2>Start Harvesting Your Tasks Today</h2>
-                <p>Download SquirreList now and take control of your productivity with our powerful, yet simple task
+                <h2 data-i18n="download.title">Start Harvesting Your Tasks Today</h2>
+                <p data-i18n="download.description">Download SquirreList now and take control of your productivity with our powerful,
+                    yet simple task
                     management app.</p>
                 <div class="store-buttons">
                     <a href="https://apps.apple.com/vn/app/squirrelist/id6747591920" class="store-btn download">
                         <i class="fab fa-apple"></i>
                         <div class="store-btn-content">
-                            <span class="store-btn-label">Download on the</span>
-                            <span class="store-btn-name">App Store</span>
+                            <span class="store-btn-label" data-i18n="hero.appStoreLabel">Download on the</span>
+                            <span class="store-btn-name" data-i18n="hero.appStoreName">App Store</span>
                         </div>
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=vn.assifit" class="store-btn download">
                         <i class="fab fa-google-play"></i>
                         <div class="store-btn-content">
-                            <span class="store-btn-label">Get it on</span>
-                            <span class="store-btn-name">Google Play</span>
+                            <span class="store-btn-label" data-i18n="hero.googlePlayLabel">Get it on</span>
+                            <span class="store-btn-name" data-i18n="hero.googlePlayName">Google Play</span>
                         </div>
                     </a>
                 </div>
@@ -792,7 +802,8 @@
                         <i class="fas fa-squirrel logo-icon"></i>
                         <span class="footer-logo-text">SquirreList</span>
                     </div>
-                    <p class="footer-description">SquirreList helps you collect and organize your tasks efficiently,
+                    <p class="footer-description" data-i18n="footer.description">SquirreList helps you collect and organize your tasks
+                        efficiently,
                         just like a squirrel preparing for winter. Our modern task management app keeps you productive
                         and organized.</p>
                     <div class="social-links">
@@ -802,7 +813,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyright">&copy; 2025 SquirreList. All rights reserved. <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> | <a href="terms-of-service.html" class="footer-link">Terms of Service</a></p>
+                <p class="copyright"><span data-i18n="footer.copyright">&copy; 2025 SquirreList. All rights reserved.</span> <a
+                        href="privacy-policy.html" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a> | <a
+                        href="terms-of-service.html" class="footer-link" data-i18n="footer.terms">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -813,5 +826,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
 
     <!-- Custom JavaScript -->
+    <script src="i18n.js"></script>
     <script src="app.js"></script>
 </body>

@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "whyUs": "Tại sao chọn chúng tôi",
+    "features": "Tính năng",
+    "blog": "Blog",
+    "roadmap": "Lộ trình",
+    "download": "Tải xuống"
+  },
+  "hero": {
+    "title": "Thu Hoạch Công Việc",
+    "description": "Cùng chú sóc Amrita bắt đầu hành trình quản lý công việc đầy vui nhộn! SquirreList biến mỗi việc cần làm thành một hạt dẻ để thu hoạch, giúp bạn duy trì động lực với chuỗi ngày và nhắc nhở. Trải nghiệm cách quản lý công việc vui vẻ, đơn giản và hiệu quả mỗi ngày. Tải ngay và bắt đầu thu hoạch!",
+    "appStoreLabel": "Tải về trên",
+    "appStoreName": "App Store",
+    "googlePlayLabel": "Tải về trên",
+    "googlePlayName": "Google Play"
+  },
+  "whyUs": {
+    "title": "Tại sao chọn SquirreList?",
+    "card1Title": "Vui & Tạo động lực",
+    "card1Desc": "Amrita cổ vũ bạn khi hoàn thành mỗi công việc!",
+    "card2Title": "Đơn giản & Hiệu quả",
+    "card2Desc": "Quản lý công việc dễ dàng với giao diện trực quan.",
+    "card3Title": "Luôn đúng hướng",
+    "card3Desc": "Nhắc nhở và chuỗi ngày giúp bạn duy trì động lực mỗi ngày."
+  },
+  "features": {
+    "title": "Tính năng",
+    "taskListTitle": "Danh sách công việc",
+    "taskListDesc": "Sắp xếp công việc theo danh mục và nhắc nhở thông minh.",
+    "streakTitle": "Hệ thống Streak",
+    "streakDesc": "Xây dựng chuỗi ngày bằng cách hoàn thành công việc hàng ngày cùng Amrita.",
+    "motivationTitle": "Động lực vui nhộn",
+    "motivationDesc": "Ăn mừng mỗi công việc hoàn thành với tiếng reo vui của Amrita!",
+    "customTitle": "Tùy chỉnh",
+    "customDesc": "Thêm nhãn, sticker và checklist để cá nhân hóa công việc."
+  },
+  "blog": {
+    "title": "Bài viết mới nhất",
+    "post1Title": "Làm việc hiệu quả với SquirreList",
+    "post1Desc": "Khám phá cách SquirreList có thể thay đổi năng suất hàng ngày và giúp bạn đạt được nhiều hơn.",
+    "post2Title": "Câu chuyện về Amrita",
+    "post2Desc": "Tìm hiểu về hành trình của Amrita, chú sóc linh vật đáng yêu của chúng tôi.",
+    "post3Title": "5 Mẹo quản lý công việc 2025",
+    "post3Desc": "Khám phá các chiến lược và mẹo quản lý công việc mới nhất để luôn ngăn nắp trong năm 2025.",
+    "readMore": "Đọc thêm"
+  },
+  "roadmap": {
+    "title": "Hành trình phát triển",
+    "subtitle": "Đây là cách SquirreList ra đời — từ ý tưởng đến sản phẩm thực tế được xây dựng với Flutter.",
+    "step1Date": "Đầu tháng 4/2025",
+    "step1Title": "Ý tưởng & Thiết kế",
+    "step1Desc": "Tôi nảy ra ý tưởng cho SquirreList và bắt đầu thiết kế trải nghiệm người dùng và giao diện.",
+    "step1Feature1": "Ý tưởng ứng dụng",
+    "step1Feature2": "Wireframes & UI/UX",
+    "step2Date": "Giữa tháng 4 → Giữa tháng 5/2025",
+    "step2Title": "Phát triển với Flutter",
+    "step2Desc": "Tôi phát triển SquirreList bằng Flutter — triển khai tất cả tính năng cốt lõi như tạo công việc, nhắc nhở thông minh và animation.",
+    "step2Feature1": "Flutter + Dart",
+    "step2Feature2": "Đồng bộ Local & Cloud",
+    "step3Date": "Cuối tháng 5/2025",
+    "step3Title": "Phát hành lên Store",
+    "step3Desc": "SquirreList chính thức ra mắt trên các cửa hàng ứng dụng — sẵn sàng giúp người dùng tăng năng suất và tổ chức cuộc sống tốt hơn.",
+    "step3Feature1": "App Store & Google Play",
+    "step3Feature2": "Phiên bản 1.0.0",
+    "step3Feature3": "Phát hành chính thức"
+  },
+  "download": {
+    "title": "Bắt đầu thu hoạch công việc ngay hôm nay",
+    "description": "Tải SquirreList ngay và kiểm soát năng suất của bạn với ứng dụng quản lý công việc mạnh mẽ nhưng đơn giản."
+  },
+  "footer": {
+    "description": "SquirreList giúp bạn thu thập và sắp xếp công việc hiệu quả, giống như một chú sóc chuẩn bị cho mùa đông. Ứng dụng quản lý công việc hiện đại giúp bạn luôn năng suất và ngăn nắp.",
+    "copyright": "© 2025 SquirreList. Bảo lưu mọi quyền.",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ"
+  }
+}
