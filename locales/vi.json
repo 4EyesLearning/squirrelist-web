@@ -7,7 +7,7 @@
     "download": "Tải xuống"
   },
   "hero": {
-    "title": "Thu Hoạch Công Việc",
+    "title": "Harvest Your Tasks",
     "description": "Cùng chú sóc Amrita bắt đầu hành trình quản lý công việc đầy vui nhộn! SquirreList biến mỗi việc cần làm thành một hạt dẻ để thu hoạch, giúp bạn duy trì động lực với chuỗi ngày và nhắc nhở. Trải nghiệm cách quản lý công việc vui vẻ, đơn giản và hiệu quả mỗi ngày. Tải ngay và bắt đầu thu hoạch!",
     "appStoreLabel": "Tải về trên",
     "appStoreName": "App Store",
@@ -49,17 +49,17 @@
     "subtitle": "Đây là cách SquirreList ra đời — từ ý tưởng đến sản phẩm thực tế được xây dựng với Flutter.",
     "step1Date": "Đầu tháng 4/2025",
     "step1Title": "Ý tưởng & Thiết kế",
-    "step1Desc": "Tôi nảy ra ý tưởng cho SquirreList và bắt đầu thiết kế trải nghiệm người dùng và giao diện.",
+    "step1Desc": "Chúng tôi nảy ra ý tưởng cho SquirreList và bắt đầu thiết kế trải nghiệm người dùng và giao diện.",
     "step1Feature1": "Ý tưởng ứng dụng",
     "step1Feature2": "Wireframes & UI/UX",
-    "step2Date": "Giữa tháng 4 → Giữa tháng 5/2025",
+    "step2Date": "Giữa tháng 6 → Giữa tháng 8/2025",
     "step2Title": "Phát triển với Flutter",
-    "step2Desc": "Tôi phát triển SquirreList bằng Flutter — triển khai tất cả tính năng cốt lõi như tạo công việc, nhắc nhở thông minh và animation.",
+    "step2Desc": "Chúng tôi phát triển SquirreList bằng Flutter — triển khai tất cả tính năng cốt lõi như tạo công việc, nhắc nhở thông minh và animation.",
     "step2Feature1": "Flutter + Dart",
     "step2Feature2": "Đồng bộ Local & Cloud",
-    "step3Date": "Cuối tháng 5/2025",
+    "step3Date": "Tháng 9/2025",
     "step3Title": "Phát hành lên Store",
-    "step3Desc": "SquirreList chính thức ra mắt trên các cửa hàng ứng dụng — sẵn sàng giúp người dùng tăng năng suất và tổ chức cuộc sống tốt hơn.",
+    "step3Desc": "SquirreList chính thức ra mắt trên các cửa hàng ứng dụng — sẵn sàng giúp người dùng tăng năng suất và tạo thói quen tốt hơn.",
     "step3Feature1": "App Store & Google Play",
     "step3Feature2": "Phiên bản 1.0.0",
     "step3Feature3": "Phát hành chính thức"
@@ -70,7 +70,7 @@
   },
   "footer": {
     "description": "SquirreList giúp bạn thu thập và sắp xếp công việc hiệu quả, giống như một chú sóc chuẩn bị cho mùa đông. Ứng dụng quản lý công việc hiện đại giúp bạn luôn năng suất và ngăn nắp.",
-    "copyright": "© 2025 SquirreList. Bảo lưu mọi quyền.",
+    "copyright": "© 2025 SquirreList. All rights reserved.",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ"
   }
